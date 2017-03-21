@@ -2,6 +2,7 @@ var querystring = require("querystring"),
     fs = require("fs"),
     formidable = require("formidable");
 
+<<<<<<< HEAD
 function home(response) {
   console.log("Request handler 'start' was called.");
 
@@ -33,6 +34,8 @@ function home(response) {
     response.write(body);
     response.end();
 }
+=======
+>>>>>>> 980dbf95ee6e4fe794169ff71ec89a710fe5b83f
 function start(response) {
   console.log("Request handler 'start' was called.");
 
@@ -84,7 +87,10 @@ function show(response) {
   fs.createReadStream("/tmp/test.png").pipe(response);
 }
 
+<<<<<<< HEAD
 exports.home = home;
+=======
+>>>>>>> 980dbf95ee6e4fe794169ff71ec89a710fe5b83f
 exports.start = start;
 exports.upload = upload;
 exports.show = show;
